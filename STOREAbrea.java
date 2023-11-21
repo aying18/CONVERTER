@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package store.discount;
+package store.Arbea;
 
 import javax.swing.JOptionPane;
 
@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  *
  * @author St. Michael
  */
-public class STOREDISCOUNT {
+public class STOREAbrea {
 
     /**
      * @param args the command line arguments
