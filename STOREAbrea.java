@@ -26,7 +26,7 @@ public class STOREAbrea {
 
             // Product names and prices
             String[] products = { "Pencil", "Notebook", "Backpack", "Ruler", "Eraser" };
-            double[] prices = { 0.5, 1.5, 20.0, 1.0, 0.25 };
+            double[] prices = { 15, 35, 1000, 40, 10 };
 
             double totalCost = 0.0;
 
@@ -35,7 +35,7 @@ public class STOREAbrea {
                 // Display product options
                 StringBuilder productList = new StringBuilder("Available Products:\n");
                 for (int i = 0; i < products.length; i++) {
-                    productList.append(i + 1).append(". ").append(products[i]).append(" - $").append(prices[i]).append("\n");
+                    productList.append(i + 1).append(". ").append(products[i]).append(" - Php").append(prices[i]).append("\n");
                 }
 
                 int choice;
@@ -84,7 +84,7 @@ public class STOREAbrea {
             double cash = 0;
             do {
                 try {
-                    String inputCash = JOptionPane.showInputDialog("Hello, " + customerName + "! Total cost: $" + totalCost + "\nEnter cash amount:");
+                    String inputCash = JOptionPane.showInputDialog("Hello, " + customerName + "! Total cost: Php" + totalCost + "\nEnter cash amount:");
                     if (inputCash == null) {
                         JOptionPane.showMessageDialog(null, "Transaction canceled. No cash provided.");
                         break;
@@ -107,9 +107,9 @@ public class STOREAbrea {
                 for (int i = 0; i < products.length; i++) {
                     receipt.append(products[i]).append(" x ").append(0).append("\n");
                 }
-                receipt.append("Total cost: $").append(totalCost).append("\n");
-                receipt.append("Cash provided: $").append(cash).append("\n");
-                receipt.append("Change: $").append(change).append("\n");
+                receipt.append("Total cost: Php").append(totalCost).append("\n");
+                receipt.append("Cash provided: Php").append(cash).append("\n");
+                receipt.append("Change: Php").append(change).append("\n");
 
                 JOptionPane.showMessageDialog(null, receipt.toString(), "Transaction Summary", JOptionPane.INFORMATION_MESSAGE);
             }
